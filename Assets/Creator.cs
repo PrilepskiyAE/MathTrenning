@@ -33,5 +33,21 @@ public class Creator : MonoBehaviour
         Destroy(coin.gameObject);
         text.text = "Осталось собрать: " + coins.Count.ToString();
     }
+
+    public Coin GetClosest(Vector3 point)
+    {
+        float minDistans = Mathf.Infinity;
+        Coin closestCoin=null;
+        for(int i = 0; i < coins.Count; i++) {
+            float distans = Vector3.Distance(point,coins[i].transform.position);
+            if (distans < minDistans)
+            {
+                minDistans = distans;
+                closestCoin=coins[i];
+            }
+
+        }
+        return closestCoin;
+    }
     
 }

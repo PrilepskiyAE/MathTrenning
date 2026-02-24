@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 75514272}
-  - component: {fileID: 75514271}
+  - component: {fileID: 75514273}
   m_Layer: 0
   m_Name: Creator
   m_TagString: Untagged
@@ -136,21 +136,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &75514271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75514270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 208440fa245eca0708d6b9a7689288a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 601484911610846861, guid: b6daeee8a671f9f3f84e9477b9b03c14, type: 3}
-  text: {fileID: 1053382993}
-  list: []
 --- !u!4 &75514272
 Transform:
   m_ObjectHideFlags: 0
@@ -166,6 +151,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &75514273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75514270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208440fa245eca0708d6b9a7689288a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 6136065932051012751, guid: 645f86d7992c781769d0e631e8cadc50, type: 3}
+  coins: []
+  text: {fileID: 1053382993}
 --- !u!1 &171161253
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +324,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: be16b6218b28a6c6b8858d2cdce5c0fa, type: 2}
+  - {fileID: 2100000, guid: 520622406f57678ff93914302b161161, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -417,7 +417,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e7c4c681a03006b0ea0cbf10fb96407b, type: 2}
+  - {fileID: 2100000, guid: 792804b05b7e1eea78f5232f208769fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f049a7533c8f9f5a4ff1ef738c53e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Creator: {fileID: 75514271}
+  cr: {fileID: 75514273}
 --- !u!135 &2142011936
 SphereCollider:
   m_ObjectHideFlags: 0

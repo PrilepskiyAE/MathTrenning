@@ -11,8 +11,12 @@ public class Pointer : MonoBehaviour
     [SerializeField]
     private float rotationSpeed = 2f;
 
+    [SerializeField]
+    private Transform playerTransform;
+
     void Update()
     {
+         transform.position = playerTransform.position;      
         closestCoin = creator.GetClosest(transform.position);
         Debug.DrawLine(transform.position,closestCoin.transform.position);
         
